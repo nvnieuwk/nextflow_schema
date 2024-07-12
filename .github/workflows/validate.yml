@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: intelligence-ai/jsonschema@v1.1.2
-      - run: jsonschema metaschema parameters/0.1.0/tests
+      - run: jsonschema metaschema parameters/0.1.0/tests/
