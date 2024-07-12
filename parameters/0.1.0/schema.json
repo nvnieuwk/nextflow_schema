@@ -115,6 +115,9 @@
         "description",
         "type"
     ],
+    "dependentRequired": {
+        "defs": ["allOf"]
+    },
     "$defs": {
         "typeAnnotation": {
             "type": "string",
