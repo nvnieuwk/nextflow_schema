@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Validate JSON
-      - uses: intelligence-ai/jsonschema@v1.1.2
-      - run: jsonschema metaschema parameters/0.1.0/tests
+        uses: intelligence-ai/jsonschema@v1.1.2
+        run: jsonschema metaschema parameters/0.1.0/tests
