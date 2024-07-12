@@ -1,6 +1,6 @@
 {
     "$schema": "../schema.json",
-    "$id": "https://raw.githubusercontent.com/nvnieuwk/nextflow_schema/main/parameters/0.1.0/tests/defs.json",
+    "$id": "defs.json",
     "title": "Test a valid JSON schema with defs",
     "description": "this is a test",
     "type": "object",
