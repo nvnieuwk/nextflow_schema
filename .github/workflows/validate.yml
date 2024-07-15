@@ -23,5 +23,5 @@ jobs:
       - name: Install ajv-cli 5.0.0
         run: npm install -g ajv-cli@5.0.0
       - name: Test valid JSON schemas (${{ matrix.schema-version }})
-        run: ajv test -s parameters/${{ matrix.schema-version}}/schema.json -d parameters/${{ matrix.schema-version }}/tests --spec=draft2020 --validate-formats=false --valid
+        run: ajv test -s parameters/${{ matrix.schema-version}}/schema.json -d parameters/${{ matrix.schema-version }}/tests/*.json --spec=draft2020 --validate-formats=false --valid
 
