@@ -1,5 +1,5 @@
 {
-    "$schema": "../schema.json",
+    "$schema": "../../schema.json",
     "$id": "defs.json",
     "title": "Test a valid JSON schema with defs",
     "description": "this is a test",
