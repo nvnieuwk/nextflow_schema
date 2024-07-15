@@ -1,0 +1,48 @@
+{
+    "$schema": "../../schema.json",
+    "$id": "properties.json",
+    "title": "Test a valid JSON schema with properties",
+    "description": "this is a test",
+    "type": "object",
+    "required": ["test"],
+    "dependentRequired": {
+        "test": ["test2"]
+    },
+    "properties": {
+        "test": {
+            "type": "string",
+            "format": "file-path",
+            "mimetype": "text/csv",
+            "pattern": "^\\S+\\.csv$",
+            "exists": true,
+            "schema": "path/to/schema.json",
+            "description": "We do some more testing over here",
+            "help_text": "This is some help text",
+            "fa_icon": "fas fa-file-csv",
+            "errorMessage": "This is an error message",
+            "minLength": 0,
+            "maxLength": 50
+        },
+        "test2": {
+            "type": "integer",
+            "default": 20,
+            "examples": [
+                52,
+                12,
+                20
+            ],
+            "deprecated": true,
+            "hidden": true,
+            "minimum": 0,
+            "maximum": 100,
+            "exclusiveMaximum": 100,
+            "exclusiveMinimum": 0,
+            "multipleOf": 2,
+            "enum": [2,4,6,8,10],
+            "const": 10
+        },
+        "test3": {
+            "type": "boolean"
+        }
+    }
+}
