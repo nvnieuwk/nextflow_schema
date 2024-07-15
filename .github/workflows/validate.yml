@@ -12,5 +12,8 @@ jobs:
       - name: Load jsonschema
         uses: intelligence-ai/jsonschema@v1.1.2
 
-      - name: Test JSON schemas
-        run: cd parameters/0.1.0/tests && jsonschema metaschema ./
+      - name: Test JSON meta schemas
+        run: jsonschema metaschema parameters/*/schema.json
+
+      - name: Validate test JSON schemas
+        run: for JSON in parameters/0.1.0/tests/*.json do; jsonschema validate $JSON; done
